@@ -1,14 +1,10 @@
 {% extends "base.html.twig" %}
-
+{% block title 'Hello city !'%}
 {% block body %}
+    <img src="{{ asset('/images/devon-hawkins-1v-rhDzTWrg-unsplash.jpg') }}" class="rounded-full shadow-md mt-12 w-64 h-64" alt="">
+    <h1 class="mt-5 text-3xl sm:text-5xl font-semibold text-indigo-600">Hello From Quebec</h1>
 
-    <h1>Hello From Quebec</h1>
+    <p class="text-lg text-gray-800">Il est {{ 'now'|date('h:i A') }}.</p>
 
-    <p>Il est {{ 'now'|date('h:i A') }}.</p>
-<footer>
-    <p>&copy; Copyright {{ 'now'|date('Y') }} &middot; 
-        <a href="#">About Us</a>
-    </p>
-</footer>
 {% endblock %}
 
